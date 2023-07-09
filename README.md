@@ -43,7 +43,7 @@ design of the overall solution, in particular the files:-
 - <b>Program.cs</b> located in project <b>SimpleCalculator.API</b>
 - <b>Controllers/SimpleCalculatorController.cs</b> located in project <b>SimpleCalculator.API</b>
 
-<h3>API Testing:-</h3> The API element of the solution (found in project <b>SimpleCalculatorAPI</b> provides the Swagger middleware to allow
+<h3>API Testing:-</h3> The API element of the solution (found in project <b>SimpleCalculator.API</b> provides the Swagger middleware to allow
 testing of the API project through Visual Studio and a suitable browser, please use the "Http" run configuration for this.
 
 
