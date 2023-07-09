@@ -44,7 +44,7 @@ design of the overall solution, in particular the files:-
 - <b>Controllers/SimpleCalculatorController.cs</b> located in project <b>SimpleCalculator.API</b>
 
 <h3>API Testing:-</h3> The API element of the solution (found in project <b>SimpleCalculator.API</b>) utilises the Swagger middleware to allow
-testing of the API project through Visual Studio and a suitable browser, please use the "Http" run configuration for this.
+testing of the API project through Visual Studio and a suitable browser, please use either the "Https" or "Http" run configurations for this.
 
 <h3>API Constraints</h3> The API does not implement authentication/authorisation, logging or versioning since this is a small API that would
 not currently benefit from these. They can be introduced in the future but will increase the complexity of the solution greatly for currently
