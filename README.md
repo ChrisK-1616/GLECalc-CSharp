@@ -33,3 +33,20 @@ Web
 
 Design and Implementation Rationale
 ===================================
+
+<h3>Note:-</h3> please refer to the code comments provided in the various solution <b>*.cs</b> files to get more insight into the operation and
+design of the overall solution, in particular the files:-
+
+- <b>ISimpleCalculator.cs</b> located in project <b>SimpleCalculator</b>
+- <b>SimpleCalculatorByApi.cs</b> located in project <b>SimpleCalculator</b>
+- <b>SimpleCalculatorByApiTestFixture.cs</b> located in project <b>SimpleCalculatorLibraryTests</b>
+- <b>Program.cs</b> located in project <b>SimpleCalculator.API</b>
+- <b>Controllers/SimpleCalculatorController.cs</b> located in project <b>SimpleCalculator.API</b>
+
+<h3>API Testing:-</h3> The API element of the solution (found in project <b>SimpleCalculatorAPI</b> provides the Swagger middleware to allow
+testing of the API project through Visual Studio and a suitable browser, please use the "Http" run configuration for this.
+
+
+
+
+
