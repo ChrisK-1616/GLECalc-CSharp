@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{80A586BE-9F04-44E4-8587-C3CD399CDAB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{80A586BE-9F04-44E4-8587-C3CD399CDAB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculatorLibraryTests", "SimpleCalculatorLibraryTests\SimpleCalculatorLibraryTests.csproj", "{00BA24F6-6478-4736-A1BF-2CD3A4810E53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculatorLibraryTests", "SimpleCalculatorLibraryTests\SimpleCalculatorLibraryTests.csproj", "{00BA24F6-6478-4736-A1BF-2CD3A4810E53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator.API", "SimpleCalculator.API\SimpleCalculator.API.csproj", "{0418B272-F7F2-4ACC-8809-932B353E5351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculator.API", "SimpleCalculator.API\SimpleCalculator.API.csproj", "{0418B272-F7F2-4ACC-8809-932B353E5351}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculator.UI", "SimpleCalculator.UI\SimpleCalculator.UI.csproj", "{58BD8916-D39B-4938-9D4E-CF5965ECE185}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0418B272-F7F2-4ACC-8809-932B353E5351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0418B272-F7F2-4ACC-8809-932B353E5351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0418B272-F7F2-4ACC-8809-932B353E5351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BD8916-D39B-4938-9D4E-CF5965ECE185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BD8916-D39B-4938-9D4E-CF5965ECE185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BD8916-D39B-4938-9D4E-CF5965ECE185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BD8916-D39B-4938-9D4E-CF5965ECE185}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
