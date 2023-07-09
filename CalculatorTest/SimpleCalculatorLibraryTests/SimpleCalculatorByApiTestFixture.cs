@@ -1,11 +1,14 @@
+// Author: Chris Knowles
+// Date: Jul 2023
+// File: SimpleCalculatorByApiTestFixture.cs
+// Version: 1.0.0
+
 using SimpleCalculator;
-using System.ComponentModel;
-using System.Xml.Linq;
 
 namespace SimpleCalculatorLibraryTests
 {
     /// <summary>
-    ///  Suite of tests to exercise the <see cref="SimpleCalculatorByApi"/> concrete
+    ///  Test fixture to exercise the <see cref="SimpleCalculatorByApi"/> concrete
     ///  implementation intended to be utilised by an ASPNET Core Web RESTful API
     /// </summary>
     [TestClass]
