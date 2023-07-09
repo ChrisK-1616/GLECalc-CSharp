@@ -10,11 +10,11 @@ Visual Studio
 1.	Create an empty solution called CalculatorTest.
 2.	Create a class library containing the provided interface:-
 
-   public interface ISimpleCalculator
-   {
-     public int Add(int start,  int amount);
-     public int Subtract(int start, int amount);
-   }
+   	<p><code>public interface ISimpleCalculator<br>
+    {<br>
+        public int Add(int start,  int amount);<br>
+        public int Subtract(int start, int amount);<br>
+    }<br></code></p>
 
 4.	Create a C# class to realize the interface as a C# class and implement the methods.
 
