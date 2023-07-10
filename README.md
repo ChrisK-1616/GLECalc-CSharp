@@ -31,8 +31,8 @@ Web
 9.	Ensure the web app can work on a variety of screen sizes and devices
 
 
-Design and Implementation Rationale
-===================================
+Design and Implementation Notes
+===============================
 
 <h3>Note:-</h3> please refer to the code comments provided in the various solution <b>*.cs</b> files to get more insight into the operation and
 design of the overall solution, in particular the files:-
@@ -73,9 +73,20 @@ Angular: 15.2.6<br>
 rxjs: 7.8.0<br>
 typescript: 4.9.5<br><br></p>
 
+Make sure that the API is being served on <code>localhost:5000</code> and then you can use the <code>ng serve --port 12864</code> command to
+run the Angular app. Use a suitable browser and navigate to URL <code>http://localhost:12864</code> to access the UI for the Simple Calculator.
+Once you have access to the web page you can enter required values into the input fields and use the "Add" and the "Subtract" buttons to display
+the result of the selected calculation (shown to the right of the "Result:" text). There are also a pair of radio buttons to allow the
+background colour of the calculator element of the UI to be swapped between an orange and a salmon colour.
 
+The author makes apologies for the rather "rough and ready" style for the UI - with further time and effort this could be enhanced.
 
+Overall considering the tasks set in the challenge the author feels the majority have been achieved, however the last two tasks are of a rather
+low quality and the overall UI web page is not "pop-up" styled.
 
+Regards,
+
+Chris Knowles
 
 
 
