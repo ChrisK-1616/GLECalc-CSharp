@@ -1,17 +1,23 @@
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SimpleCalculatorService {
-  add(start: number, amount: number) {
-    return start + amount;
+  constructor(private http: HttpClient) {
   }
 
-  subtract(start: number, amount: number) {
-    return start - amount;
+  add(start: number, amount: number): Observable<number> {
+    let url: string = `http://localhost:5000/api/SimpleCalculator/Add?start=${start}&amount=${amount}`;
+
+    return this.http.get<number>(url);
   }
 
-  constructor() {
+  subtract(start: number, amount: number): Observable<number> {
+    let url: string = `http://localhost:5000/api/SimpleCalculator/Subtract?start=${start}&amount=${amount}`;
+
+    return this.http.get<number>(url);
   }
 }

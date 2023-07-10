@@ -6,13 +6,34 @@ import { SimpleCalculatorService } from '../simple-calculator.service';
   templateUrl: './simple-calculator.component.html',
   styleUrls: ['./simple-calculator.component.css']
 })
-export class SimpleCalculatorComponent implements OnInit {
-  arithService: SimpleCalculatorService;
-
-  constructor(service: SimpleCalculatorService) {
-    this.arithService = service;
+export class SimpleCalculatorComponent {
+  start: number = 0;
+  amount: number = 0;
+  result: number = 0;
+  isOrange: boolean = true; 
+  
+  constructor(public arithService: SimpleCalculatorService) {
   }
 
-  ngOnInit() {
+  onAdd() {
+    this.arithService.add(this.start, this.amount).
+      subscribe(response  => {
+        this.result = response.valueOf();
+      });
+  }
+
+  onSubtract() {
+    this.arithService.subtract(this.start, this.amount).
+      subscribe(response => {
+        this.result = response.valueOf();
+      });
+  }
+
+  onBgColourOrange() {
+    this.isOrange= true; 
+  }
+
+  onBgColourSalmon() {
+    this.isOrange = false; 
   }
 }

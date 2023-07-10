@@ -1,2 +1,36 @@
-<p>10 + 5 = {{ arithService.add(10, 5) }}</p>
-<p>10 - 5 = {{ arithService.subtract(10, 5) }}</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="simple-calculator.component.css">
+</head>
+<body>
+  <div style="padding: 10px; background-color: lightblue; margin-top: 10px; margin-left: 15%; margin-right: 15%; ">
+    <h1 style="padding: 10px; text-align: center;">Simple Calculator</h1>
+    <br />
+    <br />
+    <div [style.backgroundColor]="isOrange ? 'orange' : 'salmon'" style="padding: 10px; color: blue; text-align: center; margin-left: 25%; margin-right: 25%; margin-bottom: 10px;">
+      <label style="margin-right:5px" for="start">Start: </label>
+      <input id="start" type="number" [(ngModel)]="start" />
+      <br />
+      <br />
+      <label style="margin-right:5px" for="amount">Amount: </label>
+      <input id="amount" type="number" [(ngModel)]="amount" />
+      <br />
+      <br />
+      <button style="margin:10px" class="btn btn-primary" (click)="onAdd()">Add</button>
+      <button style="margin:10px" class="btn btn-primary" (click)="onSubtract()">Subtract</button>
+      <br />
+      <br />
+      <p id="result">Result: {{ result }}</p>
+    </div>
+    <b>
+      <label style="padding-right: 10px; margin-left: 25%;" for="orange">Orange Background</label>
+      <input type="radio" id="orange" name="bgcolour" value="Orange" (click)="onBgColourOrange()" checked="checked">
+      <br />
+      <label style="padding-right: 10px; margin-left: 25%;" for="salmon">Salmon Background</label>
+    </b>
+    <input type="radio" id="salmon" name="bgcolour" value="Salmon" (click)="onBgColourSalmon()">
+  </div>
+  <footer style="padding-top: 10px; margin-left: 15%"><h6><i>Author: Chris Knowles - July 2023</i></h6></footer>
+</body>
+</html>
