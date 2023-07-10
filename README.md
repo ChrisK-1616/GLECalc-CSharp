@@ -43,12 +43,37 @@ design of the overall solution, in particular the files:-
 - <b>Program.cs</b> located in project <b>SimpleCalculator.API</b>
 - <b>Controllers/SimpleCalculatorController.cs</b> located in project <b>SimpleCalculator.API</b>
 
+The SimpleCalculator class library and associated unit tests, the ASPNET Core Web API and the relevant elements of the Angular UI app has been
+built using .Net Core 7.0. This will need to be installed in order to run the solution.
+
 <h3>API Testing:-</h3> The API element of the solution (found in project <b>SimpleCalculator.API</b>) utilises the Swagger middleware to allow
 testing of the API project through Visual Studio and a suitable browser, please use either the "Https" or "Http" run configurations for this.
+
 
 <h3>API Constraints</h3> The API does not implement authentication/authorisation, logging or versioning since this is a small API that would
 not currently benefit from these. They can be introduced in the future but will increase the complexity of the solution greatly for currently
 very little advantage.
+
+The package "Microsoft.AspNetCore.Cors" (v2.2.0) has been used to get over issues of CORS protection when connecting to
+the API through the Angular app. This requires the Angular app to be served using port 12864 so the CORS protection can be circumvented when
+testing the development version of the applications.
+
+To deploy the API ensure it is listening on <code>localhost:5000</code> as this is the host address for the endpoints which are coded in the
+Angular app service. This can quickly be achieved by running the <code>SimpleCalculator.API.exe</code> executable that is built by Visual
+Studio and is located in the "bin/Debug/net7.0" folder of the "SimpleCalculator.API" project. This should result in the API listening on the 
+correct host and port.
+
+
+<h3>SimpleCalculator UI - Angular App</h3> The web-based front end is implemented using:-
+
+<p><br>Angular CLI: 15.2.5<br>
+Node: 18.16.1<br>
+Package Manager: npm 9.7.2<br>
+Angular: 15.2.6<br>
+rxjs: 7.8.0<br>
+typescript: 4.9.5<br><br></p>
+
+
 
 
 
